@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+body,
+h1,
+p,
+table,
+th,
+td,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url("/images/manga-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Overlay gelap agar teks tetap jelas */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 1020px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: "Bangers", cursive;
+    color: #ff4757;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Navigation Styling */
+.nav {
+    margin-bottom: 20px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0px 10px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #ff4757;
+    box-shadow: 0 0 10px #ff6b81;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #ff6b81;
+    box-shadow: 0 0 15px #ff4757, 0 0 30px #ff6b81;
+    transform: scale(1.1);
+}
+
+/* Subheading Styling */
+h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ff4757;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Tombol */
+.tombol {
+    background-color: #ff4757;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 0 8px #ff6b81;
+}
+
+.tombol:hover {
+    background-color: #ff6b81;
+    box-shadow: 0 0 15px #ff4757;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #ff4757;
+    color: #fff;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 71, 87, 0.05);
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 71, 87, 0.15);
+}
+
+/* Footer */
+.footer {
+    margin-top: 10px;
+    border-top: 1px solid #ebebeb;
+    padding: 10px;
+    text-align: center;
+    font-size: 75%;
+    font-style: italic;
+    color: #2c2c2c;
+}
